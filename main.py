@@ -34,4 +34,4 @@ def get_products(id: int):
 #products/?stock=10&price=20
 @app.get("/products/")
 def get_products_by_stock(stock: int):
-  return list(filter(lambda item: item["stock"] == id,products)) #llama un filtro que busque coincidencia
+  return list(filter(lambda item: item["stock"] == stock,products)) #llama un filtro que busque coincidencia
