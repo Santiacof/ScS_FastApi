@@ -27,3 +27,5 @@ def get_products():
   return products # retornar listado
 
 @app.get("/products/{id}") #empexamos con parametros
+def get_products(id: int):
+  filter(lambda item: item["id"] == id,products) #llama un filtro que busque coincidencia
