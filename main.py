@@ -8,6 +8,12 @@ products = [
   "name": "Product 1",
   "price": 20,
   "stock": 10 
+  },
+  {
+  "id": 2,
+  "name": "Product 2",
+  "price": 20,
+  "stock": 10 
   }
 ]
   
@@ -19,3 +25,5 @@ def message():
 @app.get("/products")
 def get_products():
   return products # retornar listado
+
+@app.get("/products/{id}") #empexamos con parametros
